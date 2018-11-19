@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Mediterraneo</title>
+	
+	<!-- BOOTSTRAP -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+	<!-- FONT AWESOME -->
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+	<!-- CSS -->
+
+	<link href="Styles/style.css" rel="stylesheet">
+	
+</head>
+<body>
+
+<!-- Navigation section -->
+
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+<div class="container-fluid">
+	<a class="navbar-brand" href="#"><img src="Images/logo.png"></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item active">
+				<a class="nav-link" href="#slides">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#menu">Menu</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#about">About</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#connect">Contact</a>
+			</li>
+			<li class="nav-item-4">
+				<a class="nav-link border-black" href="reservations.php">Reservations</a>
+			</li>
+		</ul>
+	</div>
+</div>
+</nav>
+
+<!--- Image Slider Section-->
+
+<div id="slides" class="carousel slide" data-ride="carousel">
+	<ul class="carousel-indicators">
+		<li data-target="#slides" data-slide-to="0" class="active"></li>
+		<li data-target="#slides" data-slide-to="1"></li>
+		<li data-target="#slides" data-slide-to="2"></li>
+	</ul>
+<div class="carousel-inner">
+	<div class="carousel-item active">
+		<img src="Images/1.png">
+		<div class="carousel-caption">
+			<h1 class="display-2">Mediterraneo</h1>
+			<h3>Mediterranean restaurant</h3>
+			<a class="btn btn-primary btn-lg" href="reservations.php">RESERVATIONS</a>
+		</div>
+	</div>
+	<div class="carousel-item">
+		<img src="Images/2.png">
+	</div>
+	<div class="carousel-item">
+		<img src="Images/3.png">
+	</div>
+	<a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
+    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    	<span class="sr-only">Previous</span>
+ 	</a>
+  	<a class="carousel-control-next" href="#slides" role="button" data-slide="next">
+    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    	<span class="sr-only">Next</span>
+  	</a>
+</div>
+</div>
+
+<!--- Jumbotron Section -->
+
+<div class="container-fluid">
+<div class="row jumbotron text-center">
+	<div class="col-12">
+		<p class="lead">Taking the lead for greatness</p>
+	</div>	
+</div>	
+</div>
+
+<!--- Welcome Section -->
+
+<div class="container-fluid padding">
+<div class="row welcome text-center">
+	<div class="col-12">
+		<h1 class="display-4">Exquisite taste</h1>
+	</div>
+	<hr>
+	<div class="col-12">
+		<p class="lead">Whether you want to enjoy our cuisine or you just want to relax and enjoy peaceful surrounds. We got you covered!</p>
+	</div>
+</div>	
+</div>
+
+<!-- Info Section -->
+
+<div class="container-fluid padding">
+<div class="row text-center padding">
+	<div class="col-lg-6">
+		<i class="fas fa-fish"></i>
+		<h3>FISH</h3>
+		<p>Fresh seafood from the Adriatic sea.</p>
+	</div>
+	<div class="col-lg-6">
+		<i class="fas fa-utensils"></i>
+		<h3>CONTINENTAL CUISINE</h3>
+		<p>Food made with love, passion and dedication.</p>
+	</div>
+</div>
+<hr class="my-4">
+</div>
+
+<!--- Welcome Section -->
+
+<div class="container-fluid padding">
+
+<div class="row welcome text-center"  id="menu">
+	<div class="col-12">
+		<h1 class="display-4">Menu</h1>
+	</div>
+	<hr>
+</div>	
+</div>
+
+<!--- Menu Section -->
+
+<div class="row padding">
+	<div class="col-md-4">
+		<div class="card">
+			<img class="card-img-top"src="Images/fried fish.png">
+			<div class="card-body">
+				<h4 class="card-title">Fried Fish</h4>
+				<button onclick="toggleHiddenContent1()" class="btn btn-outline-secondary">See more</button><hr>
+				<p id="myContent1" style="display:none;">Friend fish/Green beans/Potato/Carrot/Raddish <b>10&euro;</b></p>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="card">
+			<img class="card-img-top"src="Images/beef steak.png">
+			<div class="card-body">
+				<h4 class="card-title">Beef Steak</h4>
+				<button onclick="toggleHiddenContent2()" class="btn btn-outline-secondary">See more</button><hr>
+				<p id="myContent2" style="display:none;">Beef steak/Potato/Tartar/Parsley <b>20&euro;</b></p>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="card">
+			<img class="card-img-top"src="Images/greek salad.png">
+			<div class="card-body">
+				<h4 class="card-title">Greek salad</h4>
+				<button onclick="toggleHiddenContent3()" class="btn btn-outline-secondary">See more</button><hr>
+				<p id="myContent3" style="display:none;">Lettuce/Tomato/Feta cheese <b>5&euro;</b></p>
+			</div>
+		</div>
+	</div>
+</div>	
+</div>
+
+<!--- Fixed background Section-->
+
+<figure>
+	<div class="fixed-wrap">
+		<div id="fixed"></div>
+	</div>
+</figure>
+<hr class="my-4">
+
+<!--- About Section -->
+
+<div class="container-fluid padding" id="about">
+<div class="row padding">
+	<div class="col-lg-6">
+		<h2>About</h2>
+		<p>This website is about imaginary restaurant called <i>"Mediterraneo"</i>. Purpose of making it is for exercising web development skills.</p>
+		<p>Designed with love by <b>Filip Sporiš</b>.</p>
+		<br>
+	</div>
+	<div class="col-lg-6">
+		<div class="c-video">
+			<video class="video" src="Video/Seaside Video Footage.mp4"></video>
+			<div class="controls">
+				<div class="blue-bar">
+					<div class="blue-juice"></div>
+				</div>
+				<div class="buttons">
+					<button id="play-pause"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<hr class="my-4">	
+</div>
+
+<!--- Contact Section -->
+
+<div class="container-fluid padding" id="connect">
+<div class="row text-center padding">
+	<div class="col-12">
+		<h2>Contact</h2>
+	</div>
+	<div class="col-12 social padding">
+		<a href="#"><i class="fab fa-facebook"></i></a>
+		<a href="#"><i class="fab fa-twitter"></i></a>
+		<a href="#"><i class="fab fa-google-plus-g"></i></a>
+		<a href="#"><i class="fab fa-instagram"></i></a>
+		<a href="#"><i class="fab fa-youtube"></i></a>
+	</div>
+</div>
+</div>
+
+<!--- Footer Section-->
+
+<footer>
+<div class="container-fluid padding">
+<div class="row text-center">
+	<div class="col-md-4">
+		<img src="Images/logo2.png">
+		<hr class="light">
+		<p>+385-99-999-999</p>
+		<p>filip.sporis@gmail.com</p>
+		<p>Ulica 32</p>
+		<p>Zagreb, Hrvatska, 10000</p>
+	</div>
+	<div class="col-md-4">
+		<hr class="light">
+		<h5>Our hours</h5>
+		<hr class="light">
+		<p>Monday: 9 - 17h</p>
+		<p>Saturday: 9 - 13h</p>
+		<p>Sunday: Closed</p>
+	</div>
+	<div class="col-md-4">
+		<hr class="light">
+		<h5>Service Area</h5>
+		<hr class="light">
+		<p>Zagreb, Hrvatska, 10000</p>
+		<p>Pula, Hrvatska, 52100</p>
+		<p>Zadar, Hrvatska, 23000</p>
+		<p>Dubrovnik, Hrvatska, 20000</p>
+	</div>
+	<div class="col-12">
+		<hr class="light-100">
+		<h5>&copy; Mediterraneo.com</h5>
+	</div>
+</div>
+</div>
+</footer>
+
+<!-- JAVASCRIPT -->
+
+<script type="text/javascript" src="Scripts/script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
